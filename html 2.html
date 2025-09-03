@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sosis Solo</title>
+  <link rel="stylesheet" href="css 2.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+  <img src="logo.png" alt="Logo" class="logo" />
+  <h1>Selamat Datang</h1>
+  <img src="sosis-solo.jpg" alt="Sosis Solo" class="sosis" />
+  <div class="sejarah-content">
+    <h2>Sejarah Sosis Solo</h2>
+    <p>Sosis Solo adalah salah satu makanan khas Indonesia yang terbentuk dari akulturasi budaya Jawa dan pengaruh kolonial Belanda, yang mengadaptasi sosis Eropa dengan bahan-bahan lokal dan rempah-rempah khas Jawa. Dibungkus dengan kulit telur dadar tipis dan digoreng, Sosis Solo menjadi makanan ringan yang lezat dan populer di Indonesia.</p>
+  </div>
+</header>
+
+
+
+  <!-- Tabel Bahan & Kandungan -->
+    <section class="komposisi">
+    <h2>Kandungan & Komposisi</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Bahan Isi Sosis Solo</h3>
+        <ul>
+          <li>250 gram dada ayam.</li>
+          <li>65 mililiter santan.</li>
+          <li>100 mililiter air.</li>
+          <li>2 siung bawang putih.</li>
+          <li>5 siung bawang merah.</li>
+          <li>1 batang serai.</li>
+          <li>1 lembar daun jeruk.</li>
+          <li>1/2 sdm garam.</li>
+          <li>1 sdm gula pasir.</li>
+          <li>1/2 sdm penyedap rasa.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Bahan Kulit Sosis Solo</h3>
+        <ul>
+          <li>1 butir telur.</li>
+          <li>370 gram tepung terigu protein sedang</li>
+          <li>3 sdm tepung tapioka.</li>
+          <li>800 ml air.</li>
+          <li>1/2 sdt garam.</li>
+          <li>1/2 sdt merica.</li>
+          <li>3 sdm minyak goreng.</li>
+        </ul>
+        <h3> </h3>
+        <h3>Bahan Pelapis</h3>
+        <ul>
+          <li>1 butir telur.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Kandungan Protein</h3>
+        <ul>
+          <li>Kalori: 70kkal</li>
+          <li>Lemak: 3,58 g</li>
+          <li>Lemak Jenuh: 1,511 g</li>
+          <li>Lemak tak Jenuh Ganda: 0,567 g</li>
+          <li>Lemak tak Jenuh Tunggal: 1,105 g</li>
+          <li>Kolesterol: 68 mg</li>
+          <li>Karbohidrat: 5,57 g</li>
+          <li>Protein: 3,83 g</li>
+          <li>Karbohidrat5,57g</li>
+          <li>Serat: 0,2g</li>
+          <li>Gula: 0,83g</li>
+          <li>Sodium: 40mg</li>
+          <li>Kalium: 52mg</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+   <!-- Kontak -->
+  <section class="kontak">
+    <h2>Kontak</h2>
+    <p>📞 0838-1924-5031</p>
+  </section>
+
+  <audio id="bg-music" loop>
+    <source src="lagu-solo.mp3" type="audio/mpeg">
+  </audio>
+
+   <script>
+    const music = document.getElementById("bg-music");
+
+    function startMusic() {
+      music.play().catch(err => console.log("Autoplay diblokir:", err));
+      // hapus listener biar gak dipanggil berulang
+      document.removeEventListener("click", startMusic);
+      document.removeEventListener("scroll", startMusic);
+      document.removeEventListener("touchstart", startMusic);
+    }
+
+    document.addEventListener("click", startMusic);
+    document.addEventListener("scroll", startMusic);
+    document.addEventListener("touchstart", startMusic);
+  </script>
+  <a href="html 1.html" class="btn">kembali</a>
+</body>
+</html>
+</body>
+</html>
